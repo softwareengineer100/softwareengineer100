@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html class="js" lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+
+		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>PL/SQL Cheat Sheet - Simple Cheat Sheet| PL/SQL Cheat Sheet</title>
+	<meta name="description" content="PL/SQL is a combination of SQL along with the procedural features of programming languages. This cheat sheet to help you using PL/SQL.">
+	<link rel="canonical" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/">
+	<link rel="next" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/page/2/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="PL/SQL Cheat Sheet - Simple Cheat Sheet| PL/SQL Cheat Sheet">
+	<meta property="og:description" content="PL/SQL is a combination of SQL along with the procedural features of programming languages. This cheat sheet to help you using PL/SQL.">
+	<meta property="og:url" content="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/">
+	<meta property="og:site_name" content="Simple Cheat Sheet">
+	<meta property="og:image" content="http://simplecheatsheet.com/wp-content/uploads/2020/07/Colorful-Pop-Tutorial-Youtube-Thumbnail-3.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<script src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/f(4).txt"></script><script src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/f(5).txt" id="google_shimpl"></script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/","url":"https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/","name":"PL/SQL Cheat Sheet - Simple Cheat Sheet| PL/SQL Cheat Sheet","isPartOf":{"@id":"https://simplecheatsheet.com/#website"},"description":"PL/SQL is a combination of SQL along with the procedural features of programming languages. This cheat sheet to help you using PL/SQL.","breadcrumb":{"@id":"https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#breadcrumb"},"inLanguage":"en-US"},{"@type":"BreadcrumbList","@id":"https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://simplecheatsheet.com/"},{"@type":"ListItem","position":2,"name":"PL/SQL Cheat Sheet"}]},{"@type":"WebSite","@id":"https://simplecheatsheet.com/#website","url":"https://simplecheatsheet.com/","name":"Simple Cheat Sheet","description":"Free Cheat Sheets","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://simplecheatsheet.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Simple Cheat Sheet » Feed" href="https://simplecheatsheet.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Simple Cheat Sheet » Comments Feed" href="https://simplecheatsheet.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Simple Cheat Sheet » PL/SQL Cheat Sheet Tag Feed" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/feed/">
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/simplecheatsheet.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/style.min.css" media="all">
+<style id="wp-block-library-inline-css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/mediaelementplayer-legacy.min.css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/wp-mediaelement.min.css" media="all">
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--accent: #e22658;--wp--preset--color--primary: #000000;--wp--preset--color--secondary: #6d6d6d;--wp--preset--color--subtle-background: #dbdbdb;--wp--preset--color--background: #ffffff;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 18px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 26.25px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--normal: 21px;--wp--preset--font-size--larger: 32px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="menu-image-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/menu-image.css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/dashicons.min.css" media="all">
+<link rel="stylesheet" id="taxonomymanager-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/taxonomymanager.css" media="all">
+<link rel="stylesheet" id="ez-icomoon-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/style.min(1).css" media="all">
+<link rel="stylesheet" id="ez-toc-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/screen.min.css" media="all">
+<style id="ez-toc-inline-css">
+div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container nav ul ul li ul li {font-size: %!important;}div#ez-toc-container {width: 100%;}
+</style>
+<link rel="stylesheet" id="twentytwenty-style-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/style.css" media="all">
+<style id="twentytwenty-style-inline-css">
+.color-accent,.color-accent-hover:hover,.color-accent-hover:focus,:root .has-accent-color,.has-drop-cap:not(:focus):first-letter,.wp-block-button.is-style-outline,a { color: #e22658; }blockquote,.border-color-accent,.border-color-accent-hover:hover,.border-color-accent-hover:focus { border-color: #e22658; }button,.button,.faux-button,.wp-block-button__link,.wp-block-file .wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.bg-accent,.bg-accent-hover:hover,.bg-accent-hover:focus,:root .has-accent-background-color,.comment-reply-link { background-color: #e22658; }.fill-children-accent,.fill-children-accent * { fill: #e22658; }:root .has-background-color,button,.button,.faux-button,.wp-block-button__link,.wp-block-file__button,input[type="button"],input[type="reset"],input[type="submit"],.wp-block-button,.comment-reply-link,.has-background.has-primary-background-color:not(.has-text-color),.has-background.has-primary-background-color *:not(.has-text-color),.has-background.has-accent-background-color:not(.has-text-color),.has-background.has-accent-background-color *:not(.has-text-color) { color: #ffffff; }:root .has-background-background-color { background-color: #ffffff; }body,.entry-title a,:root .has-primary-color { color: #000000; }:root .has-primary-background-color { background-color: #000000; }cite,figcaption,.wp-caption-text,.post-meta,.entry-content .wp-block-archives li,.entry-content .wp-block-categories li,.entry-content .wp-block-latest-posts li,.wp-block-latest-comments__comment-date,.wp-block-latest-posts__post-date,.wp-block-embed figcaption,.wp-block-image figcaption,.wp-block-pullquote cite,.comment-metadata,.comment-respond .comment-notes,.comment-respond .logged-in-as,.pagination .dots,.entry-content hr:not(.has-background),hr.styled-separator,:root .has-secondary-color { color: #6d6d6d; }:root .has-secondary-background-color { background-color: #6d6d6d; }pre,fieldset,input,textarea,table,table *,hr { border-color: #dbdbdb; }caption,code,code,kbd,samp,.wp-block-table.is-style-stripes tbody tr:nth-child(odd),:root .has-subtle-background-background-color { background-color: #dbdbdb; }.wp-block-table.is-style-stripes { border-bottom-color: #dbdbdb; }.wp-block-latest-posts.is-grid li { border-top-color: #dbdbdb; }:root .has-subtle-background-color { color: #dbdbdb; }body:not(.overlay-header) .primary-menu > li > a,body:not(.overlay-header) .primary-menu > li > .icon,.modal-menu a,.footer-menu a, .footer-widgets a,#site-footer .wp-block-button.is-style-outline,.wp-block-pullquote:before,.singular:not(.overlay-header) .entry-header a,.archive-header a,.header-footer-group .color-accent,.header-footer-group .color-accent-hover:hover { color: #cd2653; }.social-icons a,#site-footer button:not(.toggle),#site-footer .button,#site-footer .faux-button,#site-footer .wp-block-button__link,#site-footer .wp-block-file__button,#site-footer input[type="button"],#site-footer input[type="reset"],#site-footer input[type="submit"] { background-color: #cd2653; }.header-footer-group,body:not(.overlay-header) #site-header .toggle,.menu-modal .toggle { color: #000000; }body:not(.overlay-header) .primary-menu ul { background-color: #000000; }body:not(.overlay-header) .primary-menu > li > ul:after { border-bottom-color: #000000; }body:not(.overlay-header) .primary-menu ul ul:after { border-left-color: #000000; }.site-description,body:not(.overlay-header) .toggle-inner .toggle-text,.widget .post-date,.widget .rss-date,.widget_archive li,.widget_categories li,.widget cite,.widget_pages li,.widget_meta li,.widget_nav_menu li,.powered-by-wordpress,.to-the-top,.singular .entry-header .post-meta,.singular:not(.overlay-header) .entry-header .post-meta a { color: #6d6d6d; }.header-footer-group pre,.header-footer-group fieldset,.header-footer-group input,.header-footer-group textarea,.header-footer-group table,.header-footer-group table *,.footer-nav-widgets-wrapper,#site-footer,.menu-modal nav *,.footer-widgets-outer-wrapper,.footer-top { border-color: #dcd7ca; }.header-footer-group table caption,body:not(.overlay-header) .header-inner .toggle-wrapper::before { background-color: #dcd7ca; }
+</style>
+<link rel="stylesheet" id="twentytwenty-print-style-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/print.css" media="print">
+<link rel="stylesheet" id="twentytwenty-jetpack-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/twentytwenty.css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/jetpack.css" media="all">
+<script src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/index.js.download" id="twentytwenty-js-js" async=""></script>
+<link rel="https://api.w.org/" href="https://simplecheatsheet.com/wp-json/"><link rel="alternate" type="application/json" href="https://simplecheatsheet.com/wp-json/wp/v2/tags/100"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://simplecheatsheet.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://simplecheatsheet.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0.2">
+<style>img#wpstats{display:none}</style>
+		<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+	<style id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+	
+	<meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/f(6).txt" as="script"><script type="text/javascript" src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/f(6).txt"></script><link rel="preload" href="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/f(7).txt" as="script"><script type="text/javascript" src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/f(7).txt"></script></head>
+
+	<body class="archive tag tag-pl-sql-cheat-sheet tag-100 custom-background wp-embed-responsive enable-search-modal has-no-pagination showing-comments show-avatars footer-top-visible reduced-spacing">
+
+		<a class="skip-link screen-reader-text" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#site-content">Skip to the content</a><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0.49803921568627"></fefuncr><fefuncg type="table" tableValues="0 0.49803921568627"></fefuncg><fefuncb type="table" tableValues="0 0.49803921568627"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 0.27843137254902"></fefuncg><fefuncb type="table" tableValues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0 0"></fefuncr><fefuncg type="table" tableValues="0 0.64705882352941"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.78039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.94901960784314"></fefuncg><fefuncb type="table" tableValues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tableValues="0.098039215686275 1"></fefuncr><fefuncg type="table" tableValues="0 0.66274509803922"></fefuncg><fefuncb type="table" tableValues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tableValues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+		<header id="site-header" class="header-footer-group">
+
+			<div class="header-inner section-inner">
+
+				<div class="header-titles-wrapper">
+
+					
+						<button class="toggle search-toggle mobile-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+							<span class="toggle-inner">
+								<span class="toggle-icon">
+									<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg>								</span>
+								<span class="toggle-text">Search</span>
+							</span>
+						</button><!-- .search-toggle -->
+
+					
+					<div class="header-titles">
+
+						<div class="site-title faux-heading"><a href="https://simplecheatsheet.com/">Simple Cheat Sheet</a></div><div class="site-description">Free Cheat Sheets</div><!-- .site-description -->
+					</div><!-- .header-titles -->
+
+					<button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+						<span class="toggle-inner">
+							<span class="toggle-icon">
+								<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="26" height="7" viewBox="0 0 26 7"><path fill-rule="evenodd" d="M332.5,45 C330.567003,45 329,43.4329966 329,41.5 C329,39.5670034 330.567003,38 332.5,38 C334.432997,38 336,39.5670034 336,41.5 C336,43.4329966 334.432997,45 332.5,45 Z M342,45 C340.067003,45 338.5,43.4329966 338.5,41.5 C338.5,39.5670034 340.067003,38 342,38 C343.932997,38 345.5,39.5670034 345.5,41.5 C345.5,43.4329966 343.932997,45 342,45 Z M351.5,45 C349.567003,45 348,43.4329966 348,41.5 C348,39.5670034 349.567003,38 351.5,38 C353.432997,38 355,39.5670034 355,41.5 C355,43.4329966 353.432997,45 351.5,45 Z" transform="translate(-329 -38)"></path></svg>							</span>
+							<span class="toggle-text">Menu</span>
+						</span>
+					</button><!-- .nav-toggle -->
+
+				</div><!-- .header-titles-wrapper -->
+
+				<div class="header-navigation-wrapper">
+
+					
+							<nav class="primary-menu-wrapper" aria-label="Horizontal">
+
+								<ul class="primary-menu reset-list-style">
+
+								
+								</ul>
+
+							</nav><!-- .primary-menu-wrapper -->
+
+						
+						<div class="header-toggles hide-no-js">
+
+						
+							<div class="toggle-wrapper search-toggle-wrapper">
+
+								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+									<span class="toggle-inner">
+										<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path d="M38.710696,48.0601792 L43,52.3494831 L41.3494831,54 L37.0601792,49.710696 C35.2632422,51.1481185 32.9839107,52.0076499 30.5038249,52.0076499 C24.7027226,52.0076499 20,47.3049272 20,41.5038249 C20,35.7027226 24.7027226,31 30.5038249,31 C36.3049272,31 41.0076499,35.7027226 41.0076499,41.5038249 C41.0076499,43.9839107 40.1481185,46.2632422 38.710696,48.0601792 Z M36.3875844,47.1716785 C37.8030221,45.7026647 38.6734666,43.7048964 38.6734666,41.5038249 C38.6734666,36.9918565 35.0157934,33.3341833 30.5038249,33.3341833 C25.9918565,33.3341833 22.3341833,36.9918565 22.3341833,41.5038249 C22.3341833,46.0157934 25.9918565,49.6734666 30.5038249,49.6734666 C32.7048964,49.6734666 34.7026647,48.8030221 36.1716785,47.3875844 C36.2023931,47.347638 36.2360451,47.3092237 36.2726343,47.2726343 C36.3092237,47.2360451 36.347638,47.2023931 36.3875844,47.1716785 Z" transform="translate(-20 -31)"></path></svg>										<span class="toggle-text">Search</span>
+									</span>
+								</button><!-- .search-toggle -->
+
+							</div>
+
+							
+						</div><!-- .header-toggles -->
+						
+				</div><!-- .header-navigation-wrapper -->
+
+			</div><!-- .header-inner -->
+
+			<div class="search-modal cover-modal header-footer-group" data-modal-target-string=".search-modal" role="dialog" aria-modal="true" aria-label="Search">
+
+	<div class="search-modal-inner modal-inner">
+
+		<div class="section-inner">
+
+			<form role="search" aria-label="Search for:" method="get" class="search-form" action="https://simplecheatsheet.com/">
+	<label for="search-form-1">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" id="search-form-1" class="search-field" placeholder="Search …" value="" name="s">
+	</label>
+	<input type="submit" class="search-submit" value="Search">
+</form>
+
+			<button class="toggle search-untoggle close-search-toggle fill-children-current-color" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field">
+				<span class="screen-reader-text">Close search</span>
+				<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg>			</button><!-- .search-toggle -->
+
+		</div><!-- .section-inner -->
+
+	</div><!-- .search-modal-inner -->
+
+</div><!-- .menu-modal -->
+
+		</header><!-- #site-header -->
+
+		
+<div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal">
+
+	<div class="menu-modal-inner modal-inner">
+
+		<div class="menu-wrapper section-inner">
+
+			<div class="menu-top">
+
+				<button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" data-set-focus=".menu-modal">
+					<span class="toggle-text">Close Menu</span>
+					<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102"></polygon></svg>				</button><!-- .nav-toggle -->
+
+				
+					<nav class="mobile-menu" aria-label="Mobile">
+
+						<ul class="modal-menu reset-list-style">
+
+						
+						</ul>
+
+					</nav>
+
+					
+			</div><!-- .menu-top -->
+
+			<div class="menu-bottom">
+
+				
+			</div><!-- .menu-bottom -->
+
+		</div><!-- .menu-wrapper -->
+
+	</div><!-- .menu-modal-inner -->
+
+</div><!-- .menu-modal -->
+<main id="site-content" role="main" style="height: auto !important; min-height: 0px !important;">
+	
+	
+			<div class="container grid js-toc-content" style="height: auto !important;">
+		<div class="main-content" style="height: auto !important;">
+			<header class="archive-header header-footer-group">
+				<div class="archive-header-inner section-inner medium">
+										<h1 class="archive-title"><span class="color-accent">Tag:</span> <span>PL/SQL Cheat Sheet</span></h1>
+															<div class="archive-subtitle section-inner medium max-percentage intro-text"><p><img class="aligncenter wp-image-2039 size-full" src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/Colorful-Pop-Tutorial-Youtube-Thumbnail-3.png" alt="PL/SQL Cheat Sheet" width="2560" height="1440"></p>
+<p>The<strong> PL/SQL cheat sheet </strong>includes symbol syntax and methods to help you using PL/SQL. <strong>ORACLE PL/SQL</strong> is an extension of SQL language that combines the data manipulation power of SQL with the processing power of procedural language to create super-powerful SQL queries. PL/SQL means instructing the compiler ‘what to do’ through SQL and ‘how to do’ through its procedural way.</p>
+</div>
+									</div><!-- .archive-header-inner -->
+			</header><!-- .archive-header -->
+			
+<article class="post-1460 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1460">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-data-types"><a href="https://simplecheatsheet.com/pl-sql-data-types/">PL/SQL: Data Types Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Scalar</strong></td><td>Single values with no internal components, such as a&nbsp;<strong>NUMBER, DATE,</strong>&nbsp;or&nbsp;<strong>BOOLEAN</strong>.</td></tr><tr><td><strong>Large Object (LOB)</strong></td><td>Pointers to large objects that are stored separately from other data items, such as text, graphic images, video clips, and sound waveforms.</td></tr><tr><td><strong>Composite</strong></td><td>Data items that have internal components that can be accessed individually. For example, collections and records.</td></tr><tr><td><strong>Reference</strong></td><td>Pointers to other data items.</td></tr></tbody></table></figure>
+
+
+
+<h5><strong>Scalar Data Types and Subtypes</strong></h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th><strong>Date Type</strong></th><th>Description</th></tr><tr><td><strong>Numeric</strong></td><td>Numeric values on which arithmetic operations are performed.</td></tr><tr><td><strong>Character</strong></td><td>Alphanumeric values that represent single characters or strings of characters.</td></tr><tr><td><strong>Boolean</strong></td><td>Logical values on which logical operations are performed.</td></tr><tr><td><strong>Datetime</strong></td><td>Dates and times.</td></tr></tbody></table></figure>
+
+
+
+<h5><strong>Numeric Data Types and Subtypes</strong></h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th><strong>Data Type</strong></th><th>Description</th></tr><tr><td><strong>PLS_INTEGER</strong></td><td>Signed integer in range -2,147,483,648 through 2,147,483,647, represented in 32 bits</td></tr><tr><td><strong>BINARY_INTEGER</strong></td><td>Signed integer in range -2,147,483,648 through 2,147,483,647, represented in 32 bits</td></tr><tr><td><strong>BINARY_FLOAT</strong></td><td>Single-precision IEEE 754-format floating-point number</td></tr><tr><td><strong>BINARY_DOUBLE</strong></td><td>Double-precision IEEE 754-format floating-point number</td></tr><tr><td><strong>NUMBER(prec, scale)</strong></td><td>Fixed-point or floating-point number with absolute value in range 1E-130 to (but not including) 1.0E126. A NUMBER variable can also represent 0</td></tr><tr><td><strong>DEC(prec, scale)</strong></td><td>ANSI specific fixed-point type with maximum precision of 38 decimal digits</td></tr><tr><td><strong>DECIMAL(prec, scale)</strong></td><td>IBM specific fixed-point type with maximum precision of 38 decimal digits</td></tr><tr><td><strong>NUMERIC(pre, secale)</strong></td><td>Floating type with maximum precision of 38 decimal digits</td></tr><tr><td><strong>DOUBLE PRECISION</strong></td><td>ANSI specific floating-point type with maximum precision of 126 binary digits (approximately 38 decimal digits)</td></tr><tr><td><strong>FLOAT</strong></td><td>ANSI and IBM specific floating-point type with maximum precision of 126 binary digits (approximately 38 decimal digits)</td></tr><tr><td><strong>INT</strong></td><td>ANSI specific integer type with maximum precision of 38 decimal digits</td></tr><tr><td><strong>INTEGER</strong></td><td>ANSI and IBM specific integer type with maximum precision of 38 decimal digits</td></tr><tr><td><strong>SMALLINT</strong></td><td>ANSI and IBM specific integer type with maximum precision of 38 decimal digits</td></tr><tr><td><strong>REAL</strong></td><td>Floating-point type with maximum precision of 63 binary digits (approximately 18 decimal digits)</td></tr></tbody></table></figure>
+
+
+
+<p> Below is a valid declaration</p>
+
+
+
+<pre class="wp-block-preformatted">DECLARE 
+   num1 INTEGER; 
+   num2 REAL; 
+   num3 DOUBLE PRECISION; 
+BEGIN 
+   null; 
+END; 
+/ </pre>
+
+
+
+<h5><strong>Character Data Types and Subtypes</strong></h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th><strong>Data Type</strong></th><th>Description</th></tr><tr><td><strong>CHAR</strong></td><td>A fixed-length character string with a maximum size of 32,767 bytes</td></tr><tr><td><strong>VARCHAR2</strong></td><td>A variable-length character string with a maximum size of 32,767 bytes</td></tr><tr><td><strong>RAW</strong></td><td>A variable-length binary or byte string with a maximum size of 32,767 bytes, not interpreted by PL/SQL</td></tr><tr><td><strong>NCHAR</strong></td><td>A fixed-length national character string with a maximum size of 32,767 bytes</td></tr><tr><td><strong>NVARCHAR2</strong></td><td>A variable-length national character string with a maximum size of 32,767 bytes</td></tr><tr><td><strong>LONG</strong></td><td>A variable-length character string with a maximum size of 32,760 bytes</td></tr><tr><td><strong>LONG RAW</strong></td><td>A variable-length binary or byte string with a maximum size of 32,760 bytes, not interpreted by PL/SQL</td></tr><tr><td><strong>ROWID</strong></td><td>Physical row identifier, the address of a row in an ordinary table</td></tr><tr><td><strong>UROWID</strong></td><td>Universal row identifier (physical, logical, or foreign row identifier)</td></tr></tbody></table></figure>
+
+
+
+<h5>Datetime and Interval Types</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Field Name</th><th>Valid Datetime Values</th><th>Valid Interval Values</th></tr><tr><td>YEAR</td><td>-4712 to 9999 (excluding year 0)</td><td>Any nonzero integer</td></tr><tr><td>MONTH</td><td>01 to 12</td><td>0 to 11</td></tr><tr><td>DAY</td><td>01 to 31 (limited by the values of MONTH and YEAR, according to the rules of the calendar for the locale)</td><td>Any nonzero integer</td></tr><tr><td>HOUR</td><td>00 to 23</td><td>0 to 23</td></tr><tr><td>MINUTE</td><td>00 to 59</td><td>0 to 59</td></tr><tr><td>SECOND</td><td>00 to 59.9(n), where 9(n) is the precision of time fractional seconds</td><td>0 to 59.9(n), where 9(n) is the precision of interval fractional seconds</td></tr><tr><td>TIMEZONE_HOUR</td><td>-12 to 14 (range accommodates daylight savings time changes)</td><td>Not applicable</td></tr><tr><td>TIMEZONE_MINUTE</td><td>00 to 59</td><td>Not applicable</td></tr><tr><td>TIMEZONE_REGION</td><td>Found in the dynamic performance view V$TIMEZONE_NAMES</td><td>Not applicable</td></tr><tr><td>TIMEZONE_ABBR</td><td>Found in the dynamic performance view V$TIMEZONE_NAMES</td><td>Not applicable</td></tr></tbody></table></figure>
+
+
+
+<h5>PL/SQL Large Object (LOB) Data Types</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Data Type</th><th>Description</th><th>Size</th></tr><tr><td>BFILE</td><td>Used to store large binary objects in operating system files outside the database.</td><td>System-dependent. Cannot exceed 4 gigabytes (GB).</td></tr><tr><td>BLOB</td><td>Used to store large binary objects in the database.</td><td>8 to 128 terabytes (TB)</td></tr><tr><td>CLOB</td><td>Used to store large blocks of character data in the database.</td><td>8 to 128 TB</td></tr><tr><td>NCLOB</td><td>Used to store large blocks of NCHAR data in the database.</td><td>8 to 128 TB</td></tr></tbody></table></figure>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1458 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1458">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-variables-constants-and-literals"><a href="https://simplecheatsheet.com/pl-sql-variables-constants-and-literals/">PL/SQL: Variables, Constants, and Literals Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Variables</h5>
+
+
+
+<pre class="wp-block-code"><code>Variable_name  datatype(size);</code></pre>
+
+
+
+<h5>Constants</h5>
+
+
+
+<pre class="wp-block-code"><code>Constant_Name  constant  Datatype(size) := value;</code></pre>
+
+
+
+<h5>Literals</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th><strong>Literal Type</strong></th><th>Example</th></tr><tr><td><strong>Numeric Literals</strong></td><td>050 78 -14 0 +327676.6667 0.0 -12.0 3.14159 +7800.006E5 1.0E-8 3.14159e0 -1E38 -9.5e-3</td></tr><tr><td><strong>Character Literals</strong></td><td>‘A’ ‘%’ ‘9’ ‘ ‘ ‘z’ ‘(‘</td></tr><tr><td><strong>String Literals</strong></td><td>‘Hello, world!”Tutorials Point”19-NOV-12’</td></tr><tr><td><strong>BOOLEAN Literals</strong></td><td>TRUE, FALSE, and NULL.</td></tr><tr><td><strong>Date and Time Literals</strong></td><td>DATE ‘1978-12-25’;TIMESTAMP ‘2012-10-29 12:01:01’;</td></tr></tbody></table></figure>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1456 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1456">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-operators"><a href="https://simplecheatsheet.com/pl-sql-operators/">PL/SQL: Operators Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Arithmetic Operators</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Operator</th><th>Description</th></tr><tr><td>+</td><td>Adds two operands</td></tr><tr><td>–</td><td>Subtracts second operand from the first</td></tr><tr><td>*</td><td>Multiplies both operands</td></tr><tr><td>/</td><td>Divides numerator by de-numerator</td></tr><tr><td>**</td><td>Exponentiation operator, raises one operand to the power of other</td></tr></tbody></table></figure>
+
+
+
+<h5>Relational Operators</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><strong>Operator</strong></td><td><strong>Description</strong></td></tr><tr><td>=</td><td>Checks if the values of two operands are equal or not, if yes then condition becomes true.</td></tr><tr><td>!=&lt;&gt;~=</td><td>Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.</td></tr><tr><td>&gt;</td><td>Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</td></tr><tr><td>&lt;</td><td>Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</td></tr><tr><td>&gt;=</td><td>Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</td></tr><tr><td>&lt;=</td><td>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</td></tr></tbody></table></figure>
+
+
+
+<h5>Comparison Operators</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Operator</th><th>Description</th></tr><tr><td>LIKE</td><td>The LIKE operator compares a character, string, or CLOB value to a pattern and returns TRUE if the value matches the pattern and FALSE if it does not.</td></tr><tr><td>BETWEEN</td><td>The BETWEEN operator tests whether a value lies in a specified range. x BETWEEN a AND b means that x &gt;= a and x &lt;= b.</td></tr><tr><td>IN</td><td>The IN operator tests set membership. x IN (set) means that x is equal to any member of set.</td></tr><tr><td>IS NULL</td><td>The IS NULL operator returns the BOOLEAN value TRUE if its operand is NULL or FALSE if it is not NULL. Comparisons involving NULL values always yield NULL.</td></tr></tbody></table></figure>
+
+
+
+<h5>Logical Operators</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Operator</th><th>Description</th></tr><tr><td>and</td><td>Called the logical AND operator. If both the operands are true then condition becomes true.</td></tr><tr><td>or</td><td>Called the logical OR Operator. If any of the two operands is true then condition becomes true.</td></tr><tr><td>not</td><td>Called the logical NOT Operator. Used to reverse the logical state of its operand. If a condition is true then Logical NOT operator will make it false.</td></tr></tbody></table></figure>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1454 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1454">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-conditions"><a href="https://simplecheatsheet.com/pl-sql-conditions/">PL/SQL: Conditions Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>IF-THEN Statement</h5>
+
+
+
+<pre class="wp-block-preformatted">IF condition THEN  
+   Statement; 
+END IF; </pre>
+
+
+
+<h5>IF-THEN-ELSE Statement</h5>
+
+
+
+<pre class="wp-block-preformatted">IF condition THEN 
+   Statement1;  
+ELSE  
+   Statement2; 
+END IF;</pre>
+
+
+
+<h5>IF-THEN-ELSIF Statement</h5>
+
+
+
+<pre class="wp-block-preformatted">IF(boolean_expression 1)THEN  
+   Statement1; -- Executes when the boolean expression 1 is true  
+ELSIF( boolean_expression 2) THEN 
+   Statement2;  -- Executes when the boolean expression 2 is true  
+ELSIF( boolean_expression 3) THEN 
+   Statement3; -- Executes when the boolean expression 3 is true  
+ELSE  
+   Statement4; -- executes when the none of the above condition is true  
+END IF; </pre>
+
+
+
+<h5>CASE Statement</h5>
+
+
+
+<pre class="wp-block-preformatted">CASE selector 
+   WHEN 'value1' THEN Statement1; 
+   WHEN 'value2' THEN Statement2; 
+   WHEN 'value3' THEN Statement3; 
+   ... 
+   ELSE Sn;  -- default case 
+END CASE;</pre>
+
+
+
+<h5>Searched CASE Statement</h5>
+
+
+
+<pre class="wp-block-preformatted">CASE 
+   WHEN selector = 'value1' THEN Statement1; 
+   WHEN selector = 'value2' THEN Statement2; 
+   WHEN selector = 'value3' THEN Statement3; 
+   ... 
+   ELSE Sn;  -- default case 
+END CASE; </pre>
+
+
+
+<h5>Nested IF-THEN-ELSE Statements</h5>
+
+
+
+<pre class="wp-block-preformatted">IF( boolean_expression 1)THEN 
+   -- executes when the boolean expression 1 is true  
+   IF(boolean_expression 2) THEN 
+      -- executes when the boolean expression 2 is true  
+      sequence-of-statements; 
+   END IF; 
+ELSE 
+   -- executes when the boolean expression 1 is not true 
+   else-statements; 
+END IF; </pre>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+			<div class="ads" style="height: auto !important;">
+				<!-- Responsive -->
+				<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-7014744652532083" data-ad-slot="2930178966" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_0_host" style="border: none; height: 280px; width: 628px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:628px;height:280px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="628" height="280" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/ads.html" data-google-container-id="a!1" data-google-query-id="CNjg2cGGhvoCFQ-2mgoduEQM-A" data-load-complete="true" data-origwidth="628" data-origheight="280"></iframe></div></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+									   
+<article class="post-1452 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1452">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-loops"><a href="https://simplecheatsheet.com/pl-sql-loops/">PL/SQL: Loops Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Basic Loop</h5>
+
+
+
+<pre class="wp-block-preformatted">LOOP 
+   Sequence of statements; 
+END LOOP; </pre>
+
+
+
+<h5>WHILE Loop</h5>
+
+
+
+<pre class="wp-block-preformatted">WHILE condition LOOP 
+   sequence_of_statements 
+END LOOP; </pre>
+
+
+
+<h5>FOR Loop</h5>
+
+
+
+<pre class="wp-block-preformatted">FOR counter IN initial_value .. final_value LOOP 
+   sequence_of_statements; 
+END LOOP;</pre>
+
+
+
+<h5>Nested Loops</h5>
+
+
+
+<ul><li><strong>Nested basic LOOP</strong></li></ul>
+
+
+
+<pre class="wp-block-preformatted">LOOP 
+   Sequence of statements1 
+   LOOP 
+      Sequence of statements2 
+   END LOOP; 
+END LOOP;</pre>
+
+
+
+<ul><li><strong>Nested FOR LOOP&nbsp;</strong></li></ul>
+
+
+
+<pre class="wp-block-preformatted">FOR counter1 IN initial_value1 .. final_value1 LOOP 
+   sequence_of_statements1 
+   FOR counter2 IN initial_value2 .. final_value2 LOOP 
+      sequence_of_statements2 
+   END LOOP; 
+END LOOP;
+</pre>
+
+
+
+<ul><li><strong>Nested WHILE LOOP </strong></li></ul>
+
+
+
+<pre class="wp-block-preformatted">WHILE condition1 LOOP 
+   sequence_of_statements1 
+   WHILE condition2 LOOP 
+      sequence_of_statements2 
+   END LOOP; 
+END LOOP; </pre>
+
+
+
+<h5>EXIT statement&nbsp;</h5>
+
+
+
+<pre class="wp-block-preformatted">EXIT;</pre>
+
+
+
+<h5>CONTINUE statement</h5>
+
+
+
+<pre class="wp-block-preformatted">CONTINUE;</pre>
+
+
+
+<h5>GOTO statement&nbsp;</h5>
+
+
+
+<pre class="wp-block-preformatted">GOTO label;
+..
+..
+&lt;&lt; label &gt;&gt;
+statement;</pre>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1450 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1450">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-arrays"><a href="https://simplecheatsheet.com/pl-sql-arrays/">PL/SQL: Arrays Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Creating a Varray Type</h5>
+
+
+
+<pre class="wp-block-preformatted">CREATE OR REPLACE TYPE varray_type_name IS VARRAY(n) of &lt;element_type&gt;</pre>
+
+
+
+<p>Where,</p>
+
+
+
+<ul><li><em><code>varray_type_name</code></em>&nbsp;is a valid attribute name,</li><li><em><code>n</code></em>&nbsp;is the number of elements (maximum) in the varray,</li><li><em><code>element_type</code></em>&nbsp;is the data type of the elements of the array.</li></ul>
+
+
+
+<h5>Resize the max size of array</h5>
+
+
+
+<pre class="wp-block-preformatted">CREATE Or REPLACE TYPE PrintArray AS VARRAY(10) OF VARCHAR2(10);</pre>
+
+
+
+<h5>Drop the varray</h5>
+
+
+
+<pre class="wp-block-preformatted">DROP TYPE varray_type_name ;</pre>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1448 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1448">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-functions"><a href="https://simplecheatsheet.com/pl-sql-functions/">PL/SQL: Functions Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Creating a Function</h5>
+
+
+
+<pre class="wp-block-preformatted">CREATE [OR REPLACE] FUNCTION function_name 
+[(parameter_name [IN | OUT | IN OUT] type [, ...])] 
+RETURN return_datatype 
+{IS | AS} 
+BEGIN 
+   &lt; function_body &gt; 
+END [function_name];</pre>
+
+
+
+<p>Where,</p>
+
+
+
+<ul><li><em><code>function-name</code></em>&nbsp;specifies the name of the function.</li><li><code>[OR REPLACE]</code> the option allows the modification of an existing function.</li><li>The optional parameter list contains the name, model, and types of the parameters. IN represents the value that will be passed from outside and OUT represents the parameter that will be used to return a value outside of the procedure.</li><li>The function must contain a&nbsp;<strong>return</strong>&nbsp;statement.</li><li>The&nbsp;<code>RETURN</code>&nbsp;clause specifies the data type you are going to return from the function.</li><li><em><code>function-body</code></em>&nbsp;contains the executable part.</li><li>The <code>AS</code> keyword is used instead of the <code>IS</code> keyword for creating a standalone function.</li></ul>
+
+
+
+<h5>Drop Function</h5>
+
+
+
+<pre class="wp-block-preformatted">DROP FUNCTION <em>function_name</em>;</pre>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1446 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1446">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-cursors"><a href="https://simplecheatsheet.com/pl-sql-cursors/">PL/SQL: Cursors Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Implicit Cursors</h5>
+
+
+
+<p>Below is table provides the description of the most used attributes</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><code>%FOUND</code></td><td>Returns TRUE if an INSERT, UPDATE, or DELETE statement affected one or more rows or a SELECT INTO statement returned one or more rows. Otherwise, it returns FALSE.</td></tr><tr><td><code>%NOTFOUND</code></td><td>The logical opposite of %FOUND. It returns TRUE if an INSERT, UPDATE, or DELETE statement affected no rows, or a SELECT INTO statement returned no rows. Otherwise, it returns FALSE.</td></tr><tr><td><code>%ISOPEN</code></td><td>Always returns FALSE for implicit cursors, because Oracle closes the SQL cursor automatically after executing its associated SQL statement.</td></tr><tr><td><code>%ROWCOUNT</code></td><td>Returns the number of rows affected by an INSERT, UPDATE, or DELETE statement, or returned by a SELECT INTO statement.</td></tr></tbody></table></figure>
+
+
+
+<p>Any SQL cursor attribute will be accessed as&nbsp;<code>sql%attribute_name</code></p>
+
+
+
+<h5>Explicit Cursors</h5>
+
+
+
+<pre class="wp-block-preformatted">CURSOR cursor_name IS select_statement; </pre>
+
+
+
+<h5>Declaring the Cursor</h5>
+
+
+
+<pre class="wp-block-preformatted">CURSOR c_customers IS 
+   SELECT id, name, address FROM customers; </pre>
+
+
+
+<h5>Opening the Cursor</h5>
+
+
+
+<pre class="wp-block-preformatted">OPEN c_customers; </pre>
+
+
+
+<h5>Fetching the Cursor</h5>
+
+
+
+<pre class="wp-block-preformatted">FETCH c_customers INTO c_id, c_name, c_addr; </pre>
+
+
+
+<h5>Closing the Cursor</h5>
+
+
+
+<pre class="wp-block-preformatted">CLOSE c_customers;</pre>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1444 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1444">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-exceptions"><a href="https://simplecheatsheet.com/pl-sql-exceptions/">PL/SQL: Exceptions Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Exception Handling</h5>
+
+
+
+<p>The default exception will be handled using&nbsp;<strong><em>WHEN others THEN</em></strong></p>
+
+
+
+<pre class="wp-block-preformatted">DECLARE 
+   &lt;declarations section&gt; 
+BEGIN 
+   &lt;executable command(s)&gt; 
+EXCEPTION 
+   &lt;exception handling goes here &gt; 
+   WHEN exception1 THEN  
+      exception1-handling-statements  
+   WHEN exception2  THEN  
+      exception2-handling-statements  
+   WHEN exception3 THEN  
+      exception3-handling-statements 
+   ........ 
+   WHEN others THEN 
+      exception3-handling-statements 
+END;</pre>
+
+
+
+<h5>Raising Exceptions</h5>
+
+
+
+<p>Below is the simple syntax for raising an exception:</p>
+
+
+
+<pre class="wp-block-preformatted">DECLARE 
+   exception_name EXCEPTION; 
+BEGIN 
+   IF condition THEN 
+      RAISE exception_name; 
+   END IF; 
+EXCEPTION 
+   WHEN exception_name THEN 
+   statement; 
+END; </pre>
+
+
+
+<h5>User-defined Exceptions</h5>
+
+
+
+<pre class="wp-block-preformatted">DECLARE 
+   my-exception EXCEPTION; </pre>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1442 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1442">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-triggers"><a href="https://simplecheatsheet.com/pl-sql-triggers/">PL/SQL: Triggers Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<p>Below is syntax for creating a trigger:</p>
+
+
+
+<pre class="wp-block-preformatted">CREATE [OR REPLACE ] TRIGGER trigger_name  
+{BEFORE | AFTER | INSTEAD OF }  
+{INSERT [OR] | UPDATE [OR] | DELETE}  
+[OF col_name]  
+ON table_name  
+[REFERENCING OLD AS o NEW AS n]  
+[FOR EACH ROW]  
+WHEN (condition)   
+DECLARE 
+   Declaration-statements 
+BEGIN  
+   Executable-statements 
+EXCEPTION 
+   Exception-handling-statements 
+END; </pre>
+
+
+
+<p>Where,</p>
+
+
+
+<ul><li><code>CREATE [OR REPLACE] TRIGGER trigger_name</code> − Creates or replaces an existing trigger with the&nbsp;<em>trigger_name</em>.</li><li><code>{BEFORE | AFTER | INSTEAD OF}</code> − This specifies when the trigger will be executed. The INSTEAD OF clause is used for creating a trigger on a view.</li><li><code>{INSERT [OR] | UPDATE [OR] | DELETE}</code> − This specifies the DML operation.</li><li><code>[OF col_name]</code> − This specifies the column name that will be updated.</li><li><code>[ON table_name]</code> − This specifies the name of the table associated with the trigger.</li><li><code>[REFERENCING OLD AS o NEW AS n]</code> − This allows you to refer new and old values for various DML statements, such as INSERT, UPDATE, and DELETE.</li><li><code>[FOR EACH ROW]</code> − This specifies a row-level trigger, i.e., the trigger will be executed for each row being affected. Otherwise, the trigger will execute just once when the SQL statement is executed, which is called a table-level trigger.</li><li><code>WHEN (condition)</code> − This provides a condition for rows for which the trigger would fire. This clause is valid only for row-level triggers.</li></ul>
+
+
+
+<p><strong>Types of PL/SQL Triggers</strong></p>
+
+
+
+<ul><li><strong>Row-level trigger&nbsp;</strong>– An event is triggered for each row updated, inserted, or deleted.</li><li><strong>Statement level trigger&nbsp;</strong>– An event is triggered for each SQL statement executed.</li></ul>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1440 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1440">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-packages"><a href="https://simplecheatsheet.com/pl-sql-packages/">PL/SQL: Packages Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<p>Below is the syntax for creating PL/SQL package specification:</p>
+
+
+
+<pre class="wp-block-preformatted"><strong>CREATE</strong> [<strong>OR</strong> <strong>REPLACE</strong>] <strong>PACKAGE</strong> package_name [ <strong>AUTHID</strong> { <strong>CURRENT_USER</strong> | DEFINER } ] { <strong>IS</strong> | <strong>AS</strong> }</pre>
+
+
+
+<h5>Package Body</h5>
+
+
+
+<pre class="wp-block-preformatted"><strong>CREATE</strong> [<strong>OR</strong> <strong>REPLACE</strong>] <strong>PACKAGE</strong> <strong>BODY</strong> package_name { <strong>IS</strong> | <strong>AS</strong> }</pre>
+
+
+
+<h5>Package elements</h5>
+
+
+
+<pre class="wp-block-preformatted">package_name.package_element</pre>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1438 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1438">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-collections"><a href="https://simplecheatsheet.com/pl-sql-collections/">PL/SQL: Collections Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Varrays</h5>
+
+
+
+<pre class="wp-block-preformatted">TYPE &lt;type_name&gt; IS VARRAY (&lt;SIZE&gt;) OF &lt;DATA_TYPE&gt;;</pre>
+
+
+
+<p>the memory allocation of Varray (dense) diagrammatically.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Subscript</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>Value</td><td>Xyz</td><td>Dfv</td><td>Sde</td><td>Cxs</td><td>Vbc</td><td>Nhu</td><td>Qwe</td></tr></tbody></table></figure>
+
+
+
+<h5>Nested Tables</h5>
+
+
+
+<pre class="wp-block-preformatted">TYPE type_name IS TABLE OF element_type [NOT NULL]; 
+
+table_name type_name;</pre>
+
+
+
+<p>The memory allocation of Nested Table (dense and sparse) diagrammatically. The black-colored element space denotes the empty element in a collection i.e. sparse.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Subscript</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>Value (dense)</td><td>Xyz</td><td>Dfv</td><td>Sde</td><td>Cxs</td><td>Vbc</td><td>Nhu</td><td>Qwe</td></tr><tr><td>Value(sparse)</td><td>Qwe</td><td></td><td>Asd</td><td>Afg</td><td></td><td>Asd</td><td>Wer</td></tr></tbody></table></figure>
+
+
+
+<h5>Index-by Table</h5>
+
+
+
+<pre class="wp-block-preformatted">TYPE type_name IS TABLE OF element_type [NOT NULL] INDEX BY subscript_type; 
+
+table_name type_name;</pre>
+
+
+
+<p>The memory allocation of Nested Table (sparse) diagrammatically. The black-colored element space denotes the empty element in a collection i.e. sparse.</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>Subscript (varchar)</td><td>FIRST</td><td>SECOND</td><td>THIRD</td><td>FOURTH</td><td>FIFTH</td><td>SIXTH</td><td>SEVENTH</td></tr><tr><td>Value(sparse)</td><td>Qwe</td><td></td><td>Asd</td><td>Afg</td><td></td><td>Asd</td><td>Wer</td></tr></tbody></table></figure>
+
+
+
+<h5>Collection Methods</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><code>EXISTS(n)</code></td><td>Returns TRUE if the nth element in a collection exists; otherwise returns FALSE.</td></tr><tr><td><code>COUNT</code></td><td>Returns the number of elements that a collection currently contains.</td></tr><tr><td><code>LIMIT</code></td><td>Checks the maximum size of a collection.</td></tr><tr><td><code>FIRST</code></td><td>Returns the first (smallest) index numbers in a collection that uses the integer subscripts.</td></tr><tr><td><code>LAST</code></td><td>Returns the last (largest) index numbers in a collection that uses the integer subscripts.</td></tr><tr><td><code>PRIOR(n)</code></td><td>Returns the index number that precedes index n in a collection.</td></tr><tr><td><code>NEXT(n)</code></td><td>Returns the index number that succeeds index n.</td></tr><tr><td><code>EXTEND</code></td><td>Appends one null element to a collection.</td></tr><tr><td><code>EXTEND(n)</code></td><td>Appends n null elements to a collection.</td></tr><tr><td><code>EXTEND(n,i)</code></td><td>Appends&nbsp;<strong>n</strong>&nbsp;copies of the i<sup>th</sup>&nbsp;element to a collection.</td></tr><tr><td><code>TRIM</code></td><td>Removes one element from the end of a collection.</td></tr><tr><td><code>TRIM(n)</code></td><td>Removes&nbsp;<strong>n</strong>&nbsp;elements from the end of a collection.</td></tr><tr><td><code>DELETE</code></td><td>Removes all elements from a collection, setting COUNT to 0.</td></tr><tr><td><code>DELETE(n)</code></td><td>Removes the&nbsp;<strong>n<sup>th</sup></strong>&nbsp;element from an associative array with a numeric key or a nested table. If the associative array has a string key, the element corresponding to the key value is deleted. If&nbsp;<strong>n</strong>&nbsp;is null,&nbsp;<strong>DELETE(n)</strong>&nbsp;does nothing.</td></tr><tr><td><code>DELETE(m,n)</code></td><td>Removes all elements in the range&nbsp;<strong>m..n</strong>&nbsp;from an associative array or nested table. If&nbsp;<strong>m</strong>&nbsp;is larger than&nbsp;<strong>n</strong>&nbsp;or if&nbsp;<strong>m</strong>&nbsp;or&nbsp;<strong>n</strong>&nbsp;is null,&nbsp;<strong>DELETE(m,n)</strong>&nbsp;does nothing.</td></tr></tbody></table></figure>
+
+
+
+<h5>Collection Exceptions</h5>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><code>COLLECTION_IS_NULL</code></td><td>You try to operate on an atomically null collection.</td></tr><tr><td><code>NO_DATA_FOUND</code></td><td>A subscript designates an element that was deleted, or a nonexistent element of an associative array.</td></tr><tr><td><code>SUBSCRIPT_BEYOND_COUNT</code></td><td>A subscript exceeds the number of elements in a collection.</td></tr><tr><td><code>SUBSCRIPT_OUTSIDE_LIMIT</code></td><td>A subscript is outside the allowed range.</td></tr><tr><td><code>VALUE_ERROR</code></td><td>A subscript is null or not convertible to the key type. This exception might occur if the key is defined as a&nbsp;<strong>PLS_INTEGER</strong>&nbsp;range, and the subscript is outside this range.</td></tr></tbody></table></figure>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1436 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1436">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-transactions"><a href="https://simplecheatsheet.com/pl-sql-transactions/">PL/SQL: Transactions Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<h5>Using COMMIT</h5>
+
+
+
+<p>The <code>commit </code>command permanently changes the data in the database.</p>
+
+
+
+<pre class="wp-block-code"><code>Commit;</code></pre>
+
+
+
+<p>By default,&nbsp;<strong>automatic commit for DML commands is off</strong>. The automatic commit for DML commands can be set by using the following command</p>
+
+
+
+<pre class="wp-block-code"><code>SET AUTOCOMMIT ON; 
+-- and to turn it off
+SET AUTOCOMMIT OFF;</code></pre>
+
+
+
+<h5>Using ROLLBACK</h5>
+
+
+
+<pre class="wp-block-code"><code>ROLLBACK [TO SAVEPOINT &lt; savepoint_name&gt;]; </code></pre>
+
+
+
+<h5>Using SAVEPOINT</h5>
+
+
+
+<pre class="wp-block-code"><code>SAVEPOINT &lt; savepoint_name &gt;;</code></pre>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+
+<article class="post-1434 post type-post status-publish format-standard hentry category-archive tag-pl-sql-cheat-sheet" id="post-1434">
+	<header class="entry-header ">
+	<div class="entry-header-inner section-inner">
+		<h2 class="entry-title heading-size-1" id="pl-sql-date-time"><a href="https://simplecheatsheet.com/pl-sql-date-time/">PL/SQL: Date &amp; Time Cheat Sheet</a></h2>
+	</div><!-- .entry-header-inner -->
+
+</header><!-- .entry-header -->
+	<div class="post-inner thin ">
+		<div class="entry-content">
+			
+<p><strong>Two classes of date and time related data types in PL/SQL </strong></p>
+
+
+
+<ul><li>Datetime data types</li><li>Interval data types</li></ul>
+
+
+
+<p>The Datetime data types&nbsp;</p>
+
+
+
+<ul><li><code>DATE</code></li><li><code>TIMESTAMP</code></li><li><code>TIMESTAMP WITH TIME ZONE</code></li><li><code>TIMESTAMP WITH LOCAL TIME ZONE</code></li></ul>
+
+
+
+<p>The Interval data types are </p>
+
+
+
+<ul><li><code>INTERVAL YEAR TO MONTH</code></li><li><code>INTERVAL DAY TO SECOND</code></li></ul>
+
+
+
+<p><strong>Field Values for Datetime and Interval Data Types</strong></p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><th>Field Name</th><th>Valid Datetime Values</th><th>Valid Interval Values</th></tr><tr><td><code>YEAR</code></td><td>-4712 to 9999 (excluding year 0)</td><td>Any nonzero integer</td></tr><tr><td><code>MONTH</code></td><td>01 to 12</td><td>0 to 11</td></tr><tr><td><code>DAY</code></td><td>01 to 31 (limited by the values of MONTH and YEAR, according to the rules of the calendar for the locale)</td><td>Any nonzero integer</td></tr><tr><td><code>HOUR</code></td><td>00 to 23</td><td>0 to 23</td></tr><tr><td><code>MINUTE</code></td><td>00 to 59</td><td>0 to 59</td></tr><tr><td><code>SECOND</code></td><td>00 to 59.9(n), where 9(n) is the precision of time fractional secondsThe 9(n) portion is not applicable for DATE.</td><td>0 to 59.9(n), where 9(n) is the precision of interval fractional seconds</td></tr><tr><td><code>TIMEZONE_HOUR</code></td><td>-12 to 14 (range accommodates daylight savings time changes)Not applicable for DATE or TIMESTAMP.</td><td>Not applicable</td></tr><tr><td><code>TIMEZONE_MINUTE</code></td><td>00 to 59Not applicable for DATE or TIMESTAMP.</td><td>Not applicable</td></tr><tr><td><code>TIMEZONE_REGION</code></td><td>Not applicable for DATE or TIMESTAMP.</td><td>Not applicable</td></tr><tr><td><code>TIMEZONE_ABBR</code></td><td>Not applicable for DATE or TIMESTAMP.</td><td>Not applicable</td></tr></tbody></table></figure>
+
+
+
+<p><strong>The Datetime Data Types and Functions</strong></p>
+
+
+
+<ul><li>Datetime functions&nbsp;</li></ul>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><code>ADD_MONTHS(x, y);</code></td><td>Adds&nbsp;<strong>y</strong>&nbsp;months to&nbsp;<strong>x</strong>.</td></tr><tr><td><code>LAST_DAY(x);</code></td><td>Returns the last day of the month.</td></tr><tr><td><code>MONTHS_BETWEEN(x, y);</code></td><td>Returns the number of months between&nbsp;<strong>x</strong>&nbsp;and&nbsp;<strong>y</strong>.</td></tr><tr><td><code>NEXT_DAY(x, day);</code></td><td>Returns the datetime of the next&nbsp;<em>day</em>&nbsp;after&nbsp;<strong>x</strong>.</td></tr><tr><td><code>NEW_TIME;</code></td><td>Returns the time/day value from a time zone specified by the user.</td></tr><tr><td><code>ROUND(x [, unit]);</code></td><td>Rounds&nbsp;<strong>x</strong>.</td></tr><tr><td><code>SYSDATE();</code></td><td>Returns the current datetime.</td></tr><tr><td><code>TRUNC(x [, unit]);</code></td><td>Truncates&nbsp;<strong>x</strong>.</td></tr></tbody></table></figure>
+
+
+
+<ul><li>Timestamp functions </li></ul>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><code>CURRENT_TIMESTAMP();</code></td><td>Returns a TIMESTAMP WITH TIME ZONE containing the current session time along with the session time zone.</td></tr><tr><td><code>EXTRACT({ YEAR | MONTH | DAY | HOUR | MINUTE | SECOND } | { TIMEZONE_HOUR | TIMEZONE_MINUTE } | { TIMEZONE_REGION | } TIMEZONE_ABBR ) FROM x)</code></td><td>Extracts and returns a year, month, day, hour, minute, second, or time zone from&nbsp;<strong>x</strong>.</td></tr><tr><td><code>FROM_TZ(x, time_zone);</code></td><td>Converts the TIMESTAMP x and the time zone specified by time_zone to a TIMESTAMP WITH TIMEZONE.</td></tr><tr><td><code>LOCALTIMESTAMP();</code></td><td>Returns a TIMESTAMP containing the local time in the session time zone.</td></tr><tr><td><code>SYSTIMESTAMP();</code></td><td>Returns a TIMESTAMP WITH TIME ZONE containing the current database time along with the database time zone.</td></tr><tr><td><code>SYS_EXTRACT_UTC(x);</code></td><td>Converts the TIMESTAMP WITH TIMEZONE x to a TIMESTAMP containing the date and time in UTC.</td></tr><tr><td><code>TO_TIMESTAMP(x, [format]);</code></td><td>Converts the string x to a TIMESTAMP.</td></tr><tr><td><code>TO_TIMESTAMP_TZ(x, [format]);</code></td><td>Converts the string x to a TIMESTAMP WITH TIMEZONE.</td></tr></tbody></table></figure>
+
+
+
+<p><strong>The Interval Data Types and Functions</strong></p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td><code>NUMTODSINTERVAL(x, interval_unit);</code></td><td>Converts the number x to an INTERVAL DAY TO SECOND.</td></tr><tr><td><code>NUMTOYMINTERVAL(x, interval_unit);</code></td><td>Converts the number x to an INTERVAL YEAR TO MONTH.</td></tr><tr><td><code>TO_DSINTERVAL(x);</code></td><td>Converts the string x to an INTERVAL DAY TO SECOND.</td></tr><tr><td><code>TO_YMINTERVAL(x);</code></td><td>Converts the string x to an INTERVAL YEAR TO MONTH.</td></tr></tbody></table></figure>
+		</div><!-- .entry-content -->
+	</div><!-- .post-inner -->
+	<div class="section-inner">
+		
+	</div><!-- .section-inner -->
+
+	
+</article><!-- .post -->
+			<div class="ads">
+				<!-- Responsive -->
+				<ins class="adsbygoogle" style="display: block; height: 280px;" data-ad-client="ca-pub-7014744652532083" data-ad-slot="2930178966" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done"><div id="aswift_1_host" style="border: none; height: 280px; width: 628px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"></div></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+				<div class="js-toc" style="height: auto !important;">
+			<h4 class="widget-title">Table of contents</h4>
+			<ul class="toc-list">
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-data-types">PL/SQL: Data Types Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-variables-constants-and-literals">PL/SQL: Variables, Constants, and Literals Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-operators">PL/SQL: Operators Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-conditions">PL/SQL: Conditions Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-loops">PL/SQL: Loops Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-arrays">PL/SQL: Arrays Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-functions">PL/SQL: Functions Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-cursors">PL/SQL: Cursors Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-exceptions">PL/SQL: Exceptions Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-triggers">PL/SQL: Triggers Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-packages">PL/SQL: Packages Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-collections">PL/SQL: Collections Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-transactions">PL/SQL: Transactions Cheat Sheet</a>
+				</li>
+								<li class="toc-list-item">
+					<a class="toc-link" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#pl-sql-date-time">PL/SQL: Date &amp; Time Cheat Sheet</a>
+				</li>
+							</ul>
+			<div class="ads" style="height: auto !important;">
+				<script async="" src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/f(8).txt"></script>
+				<!-- Responsive -->
+				<ins class="adsbygoogle" style="display: block; height: 600px;" data-ad-client="ca-pub-7014744652532083" data-ad-slot="2930178966" data-ad-format="auto" data-full-width-responsive="true" data-adsbygoogle-status="done" data-ad-status="filled"><div id="aswift_2_host" style="border: none; height: 600px; width: 299px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block; overflow: visible;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_2" name="aswift_2" style="left:0;position:absolute;top:0;border:0;width:299px;height:600px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="299" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/ads(1).html" data-google-container-id="a!3" data-google-query-id="CNqm77yGhvoCFcyF1QodxzkHrw" data-load-complete="true" data-origwidth="299" data-origheight="600"></iframe></div></ins>
+				<script>
+					(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+		
+			</div>
+			<div class="extra">
+		<div class="container">
+		<a class="tag" href="https://simplecheatsheet.com/tag/sql-server-cheat-sheet/">Sql Server Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/database-cheat-sheet/">Database Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/pygame-cheat-sheet/">Pygame Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/vue-js-cheat-sheet/">Vue.js Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/mariadb-cheat-sheet/">MariaDB Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/org-mode-cheat-sheet/">Org-mode Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/nano-cheat-sheet-mac/">Nano Cheat Sheet - Mac</a><a class="tag" href="https://simplecheatsheet.com/tag/mocha-js-cheat-sheet/">Mocha.js Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/vs-code-cheat-sheet-window/">VS Code Cheat Sheet - Window</a><a class="tag" href="https://simplecheatsheet.com/tag/sql-cheat-sheet/">Sql Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/emoji-cheat-sheet/">Emoji Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/crontab-cheat-sheet/">Crontab Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/apache-cheat-sheet/">Apache Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/final-cut-pro-cheat-sheet/">Final Cut Pro Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/java-swing-cheat-sheet/">Java Swing Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/docker-cheat-sheet/">Docker Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/ack-cheat-sheet/">Ack Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/swift-cheat-sheet/">Swift Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/h2-database-cheat-sheet/">H2 Database Cheat Sheet</a><a class="tag" href="https://simplecheatsheet.com/tag/neo4j-cheat-sheet/">Neo4j Cheat Sheet</a>	</div>
+	</div>
+</main><!-- #site-content -->
+
+	<div class="footer-nav-widgets-wrapper header-footer-group">
+
+		<div class="footer-inner section-inner">
+
+			
+			
+				<aside class="footer-widgets-outer-wrapper">
+
+					<div class="footer-widgets-wrapper">
+
+						
+							<div class="footer-widgets column-one grid-item">
+								<div class="widget widget_search"><div class="widget-content"><form role="search" method="get" class="search-form" action="https://simplecheatsheet.com/">
+	<label for="search-form-2">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" id="search-form-2" class="search-field" placeholder="Search …" value="" name="s">
+	</label>
+	<input type="submit" class="search-submit" value="Search">
+</form>
+</div></div>							</div>
+
+						
+						
+					</div><!-- .footer-widgets-wrapper -->
+
+				</aside><!-- .footer-widgets-outer-wrapper -->
+
+			
+		</div><!-- .footer-inner -->
+
+	</div><!-- .footer-nav-widgets-wrapper -->
+
+			<footer id="site-footer" class="header-footer-group">
+
+				<div class="section-inner">
+
+					<div class="footer-credits">
+
+						<p class="footer-copyright">©
+							2022							<a href="https://simplecheatsheet.com/">Simple Cheat Sheet</a>
+						</p><!-- .footer-copyright -->
+
+						<p class="privacy-policy"><a class="privacy-policy-link" href="https://simplecheatsheet.com/privacy-policy/">Privacy Policy</a></p>
+						<p class="powered-by-wordpress">
+							<a href="https://wordpress.org/">
+								Powered by WordPress							</a>
+						</p><!-- .powered-by-wordpress -->
+
+					</div><!-- .footer-credits -->
+
+					<a class="to-the-top" href="https://simplecheatsheet.com/tag/pl-sql-cheat-sheet/#site-header">
+						<span class="to-the-top-long">
+							To the top <span class="arrow" aria-hidden="true">↑</span>						</span><!-- .to-the-top-long -->
+						<span class="to-the-top-short">
+							Up <span class="arrow" aria-hidden="true">↑</span>						</span><!-- .to-the-top-short -->
+					</a><!-- .to-the-top -->
+
+				</div><!-- .section-inner -->
+
+			</footer><!-- #site-footer -->
+
+			<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	<script src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/e-202236.js.download" defer=""></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:11.2',blog:'177517120',post:'0',tz:'7',srv:'simplecheatsheet.com'} ]);
+	_stq.push([ 'clickTrackerInit', '177517120', '0' ]);
+</script>
+
+	
+
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+
+Served from: simplecheatsheet.com @ 2022-09-09 03:20:39 by W3 Total Cache
+--><img src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/g.gif" alt="" width="6" height="5" id="wpstats"><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_3_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;" tabindex="0" title="Advertisement" aria-label="Advertisement"><iframe id="aswift_3" name="aswift_3" style="left: 0px; position: absolute; top: 0px; border: 0px; width: 0px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/ads(2).html" data-google-container-id="a!4" data-load-complete="true" data-origwidth="" data-origheight=""></iframe></div></ins><iframe src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/aframe.html" width="0" height="0" style="display: none; width: 1914px;" data-origwidth="0" data-origheight="0"></iframe></body><iframe id="google_esf" name="google_esf" src="./PL_SQL Cheat Sheet - Simple Cheat Sheet_ PL_SQL Cheat Sheet_files/zrt_lookup.html" style="display: none; width: 1914px;" data-origwidth="" data-origheight=""></iframe></html>
