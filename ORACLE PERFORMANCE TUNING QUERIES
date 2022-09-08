@@ -1,0 +1,5 @@
+[code]
+--select * from hr.jobs
+select DISK_READS,
+DIRECT_WRITES, LOADS, USERS_EXECUTING, fetches, executions, END_OF_FETCH_COUNT, sharable_mem, runtime_mem, sorts, sql_fulltext, sql_text from v$sqlarea
+[/code]
