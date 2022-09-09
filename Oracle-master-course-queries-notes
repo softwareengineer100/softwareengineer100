@@ -1,0 +1,28 @@
+C:\Users\Asfandyar>sqlplus / as sysdba
+
+SQL*Plus: Release 19.0.0.0.0 - Production on Fri Sep 9 23:02:12 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+SQL> alter session set container=orclpdb;
+
+Session altered.
+
+SQL> alter pluggable database open
+  2  ;
+
+Pluggable database altered.
+
+SQL> alter pluggable database orclpdb save state;
+
+Pluggable database altered.
+
+SQL> alter user hr identified by hr account unlock;
+
+User altered.
