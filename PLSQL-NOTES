@@ -39,6 +39,18 @@ __________________________________
   1.9 TIMESTAMP
     extension of date time
     in addition to date, time it has milliseconds with the precision that we specify
+  1.10 TIMESTAMP(p) WITH TIMEZONE
+    extends timestamp data type including timezone
+  1.11 TIMESTAMP(p) WITH LOCAL TIMEZONE
+    stores time with database's timezone
+    but when you query it, oracle returns it with the timezone of your session
+  1.12 INTERVAL(p) YEAR TO MONTH
+    stores and manipulates intervals of years and months
+    can set precisions for number of digits in year section.
+  1.13 INTERVAL(p) DAY TO SECOND
+    stores and manipulates intervals of days, hours, minutes and seconds.
+    precisions specify the number of digits in the specified time value.
+    
 2. Reference: pointers to storage location
 3. Large Objects: pointers to other data items stored outside of tables such as images, files etc
 4. Composite: collections or records. variables that can hold more than one value in it.
