@@ -13,7 +13,33 @@
 __________________________________
 ######### Variable types #########
 1. Scalar: hold single value with one type. basic simple
+  1.1.  CHAR (Max_length): string or text max 32,767 bytes. default value is 1 byte
+  1.2. VARCHAR2 (max_length): extended type of char. variable length. if you assign 30 bits then it will be 30 bits. if data is 10 bits only 10 bits is allocated
+  1.3 NUMBER(precision, scale): 
+    precision can be between 1 and 38. 
+    scale can be betwen -84 and 127
+    NUMBER(3,2) means 3 digits and 2 decimal places
+  1.4 BINARY_INTEGER = PLSINTEGER:
+      range is between negative 2 billion and positive 2 billion
+      faster in arithmetic operations and require less storage than numbers
+  1.5 BINARY_FLOAT
+    allocates 5 bytes of memory
+    end with "f" char.
+    for e.g. 2.07f
+  1.6 BINARY_DOUBLE
+    require 9 bytes in memory
+    ends with "d" keyword
+    larger precision than binary_float data type
+    BINARY_DOUBLE and BINARY_FLOAT computations do not raise exceptions
+  1.7 BOOLEAN: True, False, and NULL
+    by default it is NULL. In other languages it is by default false
+  1.8 DATE
+    has the time of day and hour, minutes, seconds
+    to get the current date, you should use sysdate or current_date functions
+  1.9 TIMESTAMP
+    extension of date time
+    in addition to date, time it has milliseconds with the precision that we specify
 2. Reference: pointers to storage location
 3. Large Objects: pointers to other data items stored outside of tables such as images, files etc
-4. Composite: collections or records
+4. Composite: collections or records. variables that can hold more than one value in it.
 __________________________________
