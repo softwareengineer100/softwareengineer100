@@ -1,0 +1,19 @@
+######### 3 types of blocks #########
+  Anonymous blocks
+    you don't save them
+  procedures
+    named objects containing SQL and PL/SQL in it. procedures don't have a return type
+  functions
+    just like procedures. difference is that functions must return value
+
+######### outputs #########
+1. SET SERVEROUTPUT ON
+2. DBMS_OUTPUT
+
+__________________________________
+######### Variable types #########
+1. Scalar: hold single value with one type. basic simple
+2. Reference: pointers to storage location
+3. Large Objects: pointers to other data items stored outside of tables such as images, files etc
+4. Composite: collections or records
+__________________________________
