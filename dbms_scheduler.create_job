@@ -13,3 +13,28 @@ BEGIN
 END;
 / 
 SELECT owner, job_name, enabled FROM dba_scheduler_jobs; 
+
+####################################################
+----------------------------------------------------
+BEGIN
+  DBMS_SCHEDULER.create_job (
+    job_name        => 'test_full_job_definition5',
+    job_type        => 'PLSQL_BLOCK',
+    job_action      => 'declare
+                  myinterval number;
+                begin
+                  DBMS_OUTPUT.put_line(''helloo'');
+                  myinterval := 5;
+                  if myinterval <> 0 then
+                    next_date := systimestamp +
+                      numtodsinterval(myinterval, ''second'');
+                  end if;
+                end;',
+    start_date      => SYSTIMESTAMP,
+    repeat_interval => 'freq=hourly; byminute=0; bysecond=0;',
+    enabled         => TRUE);
+END;
+/
+DBMS_SCHEDULER.run_job(job_name=> 'test_full_job_definition5 ');
+#################################################
+-------------------------------------------------
