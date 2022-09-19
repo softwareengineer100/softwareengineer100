@@ -38,3 +38,14 @@ Session altered.
 SQL> create user fred identified by fred;
 
 User created.
+
+_________________________________________________
+CREATE COMMON USER
+_________________________________________________
+--alter session set "_ORACLE_SCRIPT"=True;
+-- Create a user and grant required privileges
+DROP USER "C##SCH_PRIV" CASCADE;
+/
+CREATE USER "C##SCH_PRIV" PROFILE "DEFAULT"
+    IDENTIFIED BY "SCH_PRIV" DEFAULT TABLESPACE "USERS"
+    ACCOUNT UNLOCK;
