@@ -1,0 +1,2 @@
+SELECT date that is 20 months before today
+  SELECT SYSDATE - NUMTOYMINTERVAL(20, 'month') FROM dual;
