@@ -1,0 +1,2 @@
+DROP USER "USERNAME" CASCADE
+  If you specify the CASCADE option, Oracle will remove all schema objects of the user before deleting the user.
