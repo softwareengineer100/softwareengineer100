@@ -1,0 +1,40 @@
+View profiles
+  SELECT username, profile FROM dba_users
+  SELECT * FROM  dba_users
+________________________________________
+CREATE COMMON USERS
+________________________________________
+SQL*Plus: Release 19.0.0.0.0 - Production on Mon Sep 19 22:44:33 2022
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle.  All rights reserved.
+
+Enter user-name: system/manager as sysdba
+
+Connected to:
+Oracle Database 19c Enterprise Edition Release 19.0.0.0.0 - Production
+Version 19.3.0.0.0
+
+SQL> create user fred identified by fred'
+  2  ;
+create user fred identified by fred'
+                                   *
+ERROR at line 1:
+ORA-01756: quoted string not properly terminated
+
+
+SQL> create user fred identified by fred;
+create user fred identified by fred
+            *
+ERROR at line 1:
+ORA-65096: invalid common user or role name
+
+
+SQL> alter session set "_oracle_script"=true
+  2  ;
+
+Session altered.
+
+SQL> create user fred identified by fred;
+
+User created.
