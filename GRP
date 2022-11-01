@@ -6,6 +6,44 @@ Prerequisites:
        2. The user must have the SYSDBA system privileges
        3. Must have created a flash recovery area
        4. The database must be in ARCHIVELOG mode
+-------------------------------------------------------------------------------- 
+Create a guaranteed restore point:
+
+After you have created or migrated a fresh database, first thing to do is to create a guaranteed restore point so you can flashback to it each time before you start a new workload. The steps are as under:
+       $> su – oracle
+       $> sqlplus / as sysdba;
+Find out if ARCHIVELOG is enabled
+       SQL> select log_mode from v$database;
+If step 3 shows that ARCHIVELOG is not enabled then continue else skip to step 8 below.
+       SQL> shutdown immediate;
+       SQL> startup mount;
+       SQL> alter database archivelog;
+       SQL> alter database open;
+       SQL> create restore point CLEAN_DB guarantee flashback database;
+       * where CLEAN_DB is the name given to the guaranteed restore point.
+--------------------------------------------------------------------------------
+Viewing the guaranteed restore point
+       
+       SQL> select * from v$restore_point;
+
+Verify the information about the newly created restore point. Also, note down the SCN# for reference and we will refer to it as "reference SCN#"
+--------------------------------------------------------------------------------
+Flashback to the guaranteed restore point
+
+Now, in order to restore your database to the guaranteed restore point, follow the steps below:
+       $> su – oracle
+       $> sqlplus / as sysdba;
+       SQL> select current_scn from v$database;
+       SQL> shutdown immediate;
+       SQL> startup mount;
+       SQL> select * from v$restore_point;
+       SQL> flashback database to restore point CLEAN_DB;
+       SQL> alter database open resetlogs;
+       SQL> select current_scn from v$database;
+
+Compare the SCN# from step 9 above to the reference SCN#.
+
+NOTE: The SCN# from step 9 above may not necessarily be the exact SCN# as the reference SCN# but it will be close enough.
 ################################################################################################
 # Create GRP:
 
