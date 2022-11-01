@@ -1,0 +1,59 @@
+SQL> show parameter db_recovery_file
+
+NAME                                 TYPE        VALUE
+------------------------------------ ----------- ------------------------------
+db_recovery_file_dest                string
+db_recovery_file_dest_size           big integer 0
+SQL> select * from V$RECOVERY_FILE_DEST;
+
+no rows selected
+
+SQL> alter system set db_recovery_file_dest_size=20G scope=both;
+
+System altered.
+
+SQL> alter system set db_recovery_file_dest='/dbaclassdb/oradata/FRA' scope=both;
+alter system set db_recovery_file_dest='/dbaclassdb/oradata/FRA' scope=both
+*
+ERROR at line 1:
+ORA-02097: parameter cannot be modified because specified value is invalid
+ORA-01261: Parameter db_recovery_file_dest destination string cannot be
+translated
+ORA-01263: Name given for file destination directory is invalid
+OSD-04018: Unable to access the specified directory or device.
+O/S-Error: (OS 3) The system cannot find the path specified.
+
+
+SQL> alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=both;
+alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=both
+*
+ERROR at line 1:
+ORA-02097: parameter cannot be modified because specified value is invalid
+ORA-01261: Parameter db_recovery_file_dest destination string cannot be
+translated
+ORA-01263: Name given for file destination directory is invalid
+OSD-04018: Unable to access the specified directory or device.
+O/S-Error: (OS 2) The system cannot find the file specified.
+
+
+SQL> alter system set DB_RECOVERY_FILE_DEST_SIZE=20G scope=both;
+
+System altered.
+
+SQL> alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=both;
+alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=both
+*
+ERROR at line 1:
+ORA-02097: parameter cannot be modified because specified value is invalid
+ORA-01261: Parameter db_recovery_file_dest destination string cannot be
+translated
+ORA-01263: Name given for file destination directory is invalid
+OSD-04018: Unable to access the specified directory or device.
+O/S-Error: (OS 2) The system cannot find the file specified.
+
+
+SQL> alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=both;
+
+System altered.
+
+SQL> alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=both;
