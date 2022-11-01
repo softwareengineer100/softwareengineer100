@@ -1,3 +1,4 @@
+################################################################################################
 # Create GRP:
 
 
@@ -5,6 +6,27 @@ SQL> create restore point initial_restore_point_guarantee_flashback GUARANTEE FL
 
 Restore point created.
 
+################################################################################################
+# Check/View created GRPs
+
+SQL> SELECT NAME, SCN, TIME, DATABASE_INCARNATION#, GUARANTEE_FLASHBACK_DATABASE, STORAGE_SIZE FROM V$RESTORE_POINT WHERE GUARANTEE_FLASHBACK_DATABASE='YES';
+
+NAME
+--------------------------------------------------------------------------------
+       SCN
+----------
+TIME
+---------------------------------------------------------------------------
+DATABASE_INCARNATION# GUA STORAGE_SIZE
+--------------------- --- ------------
+INITIAL_RESTORE_POINT_GUARANTEE_FLASHBACK
+   2840005
+01-NOV-22 10.39.39.000000000 AM
+                    2 YES    209715200
+                    
+                    
+---------------------------------------------------------------------------
+################################################################################################
 # If GRP cannot be created because "oracle recovery area is not enabled" then follow the following steps
 
 SQL> show parameter db_recovery_file
@@ -68,3 +90,5 @@ SQL> alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=b
 System altered.
 
 SQL> alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=both;
+
+
