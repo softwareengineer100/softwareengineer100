@@ -1,4 +1,12 @@
 ################################################################################################
+Guaranteed Restore point:
+
+Prerequisites: 
+       1. Creating a guaranteed restore point requires the following prerequisites:
+       2. The user must have the SYSDBA system privileges
+       3. Must have created a flash recovery area
+       4. The database must be in ARCHIVELOG mode
+################################################################################################
 # Create GRP:
 
 
