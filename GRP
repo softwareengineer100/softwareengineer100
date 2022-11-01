@@ -60,6 +60,8 @@ ORA-01263: Name given for file destination directory is invalid
 OSD-04018: Unable to access the specified directory or device.
 O/S-Error: (OS 2) The system cannot find the file specified.
 
+# The above error indicates that C:\App\db_home\oradata\FRA doesn't exist. 
+# So first create the directory C:\App\db_home\oradata\FRA and then try again.
 
 SQL> alter system set db_recovery_file_dest='C:\App\db_home\oradata\FRA' scope=both;
 
