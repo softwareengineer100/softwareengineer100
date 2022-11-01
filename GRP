@@ -1,3 +1,12 @@
+# Create GRP:
+
+
+SQL> create restore point initial_restore_point_guarantee_flashback GUARANTEE FLASHBACK DATABASE;
+
+Restore point created.
+
+# If GRP cannot be created because "oracle recovery area is not enabled" then follow the following steps
+
 SQL> show parameter db_recovery_file
 
 NAME                                 TYPE        VALUE
