@@ -1,0 +1,19 @@
+#####################################################
+# Set orclpdb as container
+# Unlock account HR
+# Modify password of user HR
+-----------------------------------------------------
+SQL> alter session set container=orclpdb;
+
+Session altered.
+
+SQL> startup
+ORA-65019: pluggable database ORCLPDB already open
+
+SQL> alter user HR account unlock;
+
+User altered.
+
+SQL> alter user HR identified by farhan123;
+
+User altered.
